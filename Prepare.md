@@ -15,6 +15,6 @@
 4. Data Organization
 
     - There are 12 files for 2022, 5 files for 2023 with naming YYYYMM-divvy-tripdata and 1 Station file.  
-    |Field name|Type|Mode|
+    |Field name|Type|Mode|  
     |----------|----|----|
-    
+
