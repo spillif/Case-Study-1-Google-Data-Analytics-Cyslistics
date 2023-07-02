@@ -1,4 +1,5 @@
 # **I. Ask**
+
 ```Future Marketing Program
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cylistics annual membership
@@ -15,7 +16,6 @@
 4. A summary of your analysis
 5. Supporting visualizations and key findings
 6. Your top three recommendations based on your analysis
-
 
 ### **Mockup Questions:**
 
@@ -45,4 +45,3 @@
 2. Key stakeholders
     - Cyclistics executive team
     - Lily Moreno (Marketing director)
-
