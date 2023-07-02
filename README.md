@@ -13,7 +13,7 @@ In this case study, I will perform many real-world tasks of a junior data analys
 - [Share]()
 - [Act]()
 
-### Quick links:
+### Quick links
 
 Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 06/30/23]  
   
@@ -61,8 +61,8 @@ Moreno has assigned me the first question to answer: How do annual members and c
 
 ### Data Source
 
-I will use Cyclistic’s historical trip data to analyze and identify trends from Jan 2022 to Dec 2022 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). Motivate International Inc. has made the data available under this [license](https://www.divvybikes.com/data-license-agreement).  
-  
+Cyclistic’s historical trip data trends from Jan 2022 to Dec 2022 from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). Motivate International Inc. has made the data available under this [license](https://www.divvybikes.com/data-license-agreement).
+
 This is public data that can be used to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
 ### Data Organization
@@ -71,7 +71,7 @@ There are 12 files with the naming convention of YYYYMM-divvy-tripdata and each 
 
 ## Process
 
-BigQuery is used to combine the various datasets into one dataset and clean it.  
+BigQuery is used to combine the various datasets into one dataset and clean it.   
 Reason:  
 A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inability to manage large amounts of data. Because the Cyclistic dataset has more than 5.6 million rows, it is essential to use a platform like BigQuery that supports huge volumes of data.
 
