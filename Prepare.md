@@ -14,7 +14,34 @@
 
 4. Data Organization
 
-    - There are 12 files for 2022, 5 files for 2023 with naming YYYYMM-divvy-tripdata and 1 Station file.  
-    |Field name|Type|Mode|  
-    |----------|----|----|
+    - There are 12 files for 2022, 5 files for 2023 with naming YYYYMM-divvy-tripdata and 1 Station file naming divvy_station_YYYY_Q#Q#.
 
+****Trip Data****
+
+|Field Name|Type|Mode|
+|------|------|----|
+|ride_id|STRING|NULLABLE
+|rideable_type|STRING|NULLABLE
+|started_at|TIMESTAMP|NULLABLE
+|ended_at|TIMESTAMP|NULLABLE
+|start_station_name|STRING|NULLABLE
+|start_station_id|STRING|NULLABLE
+|end_stattion_name|STRING|NULLABLE
+|end_station_id|STRING|NULLABLE|
+|start_lat|FLOAT|NULLABLE|
+|start_lng|FLOAT|NULLABLE|
+|end_lat|FLOAT|NULLABLE|
+|end_lng|FLOAT|NULLABLE|
+|member_casual|STRING|NULLABLE|  
+
+****Station Data****
+
+|Field Name|Type|Mode|
+|------|------|----|
+|id|INTEGER|NULLABLE
+|name|STRING|NULLABLE
+|city|STRING|NULLABLE
+|latitude|FLOAT|NULLABLE
+|longtitude|FLOAT|NULLABLE
+|dpcapacity|INTEGER|NULLABLE
+|online_date|TIMESTAMP|NULLABLE
