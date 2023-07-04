@@ -119,7 +119,7 @@ Observations:
 
 ### Data Cleaning
 
-SQL Query: []()  
+SQL Query: [Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/03.%20Cleaning%20Data.sql)  
 
 1. All the rows having missing values are deleted.  
 2. 3 more columns ride_length for the duration of the trip, day_of_week and month are added.  
