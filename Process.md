@@ -11,3 +11,14 @@ Create dataset and loading raw data from share drive.
     - Combine 5 (2023 data) files into one single new table named "2023-divvy-tripdata." 2023 contains 1,670,841 rows.
 
 3. Exporing data integrity
+    - Checking null for each columns
+    - ride_id is the primary key since it dedicated to each travel ride.
+        - ride_id length is 16 chars with no value excess the it.
+    - rideable_type contains 3 unique values: electric_bike, classic_bike, docked_bike.
+    - started_at/ ended_at present TIMESTAMP (YYYY-MM-DD hh:rr:ss UTC).
+    - Review the min/ max of ride length.
+    - Calculate the time usage: more than a day and less than a minute.
+    - Explore start_stastion_name / start_station_id / end_station_name / end_station_id
+    - Check if start_station_name / start_station_id / end_station_name / end_station_id is null  but have value in each of the table.
+    - Check start_lat / start_lng / end_lat / end_lng.
+    - Check member_casual - 2 unique values: member and casual.
