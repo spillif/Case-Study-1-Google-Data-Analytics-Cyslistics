@@ -8,7 +8,7 @@ In this case study, I will perform many real-world tasks of a junior data analys
 
 - [Ask](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Ask.md#i-ask)
 - [Prepare](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Prepare.md#ii-prepare)
-- [Process]()
+- [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Process.md#iii-process)
 - [Analyze]()
 - [Share]()
 - [Act]()
@@ -18,8 +18,8 @@ In this case study, I will perform many real-world tasks of a junior data analys
 Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 06/30/23]  
   
 SQL Queries:  
-[01. Data Combining]()  
-[02. Data Exploration]()  
+[01. Data Combining](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/01.%20Combining%20Data.sql)  
+[02. Data Exploration](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/02.%20Exploring%20Data.sql)  
 [03. Data Cleaning]()  
 [04. Data Analysis]()  
 
