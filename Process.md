@@ -24,4 +24,9 @@ Create dataset and loading raw data from share drive.
     - Check member_casual - 2 unique values: member and casual.
 
 4. Cleaning data
-    - 
+    - Find if can replace the null values.
+    - Removed all the results (rows) with null values.
+    - Created a new table with ride_length, day_of_week, and month.
+    - Separate two tables:
+        - Duration with ride_length longer than a day (converted to minute 1440 = 1 day) -> 4,291,805 rows.
+        - Duration with ride_length longer than a minute and less than a day (> 1 and < 1440>) -> 156 rows -> can be ignored.
