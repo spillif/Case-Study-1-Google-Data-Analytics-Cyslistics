@@ -22,3 +22,6 @@ Create dataset and loading raw data from share drive.
     - Check if start_station_name / start_station_id / end_station_name / end_station_id is null  but have value in each of the table.
     - Check start_lat / start_lng / end_lat / end_lng.
     - Check member_casual - 2 unique values: member and casual.
+
+4. Cleaning data
+    - 
