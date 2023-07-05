@@ -20,7 +20,7 @@ Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html
 SQL Queries:  
 [01. Data Combining](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/01.%20Combining%20Data.sql)  
 [02. Data Exploration](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/02.%20Exploring%20Data.sql)  
-[03. Data Cleaning]()  
+[03. Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/03.%20Cleaning%20Data.sql)  
 [04. Data Analysis]()  
 
 Data Visualizations: [Tableau]()  
@@ -61,19 +61,33 @@ Moreno has assigned me the first question to answer: How do annual members and c
 
 ### Data Source
 
-Cyclistic’s historical trip data trends from Jan 2022 to Dec 2022 from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). Motivate International Inc. has made the data available under this [license](https://www.divvybikes.com/data-license-agreement).
+Cyclistic’s historical trip data trends from Jan 2022 to Dec 2022 from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). **Motivate International Inc.** has made the data available under this [license](https://www.divvybikes.com/data-license-agreement).
 
 This is public data that can be used to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
 ### Data Organization
 
-There are 12 files with the naming convention of YYYYMM-divvy-tripdata and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
+|Field Name|Type|Mode|
+|------|------|----|
+|ride_id|STRING|NULLABLE
+|rideable_type|STRING|NULLABLE
+|started_at|TIMESTAMP|NULLABLE
+|ended_at|TIMESTAMP|NULLABLE
+|start_station_name|STRING|NULLABLE
+|start_station_id|STRING|NULLABLE
+|end_stattion_name|STRING|NULLABLE
+|end_station_id|STRING|NULLABLE|
+|start_lat|FLOAT|NULLABLE|
+|start_lng|FLOAT|NULLABLE|
+|end_lat|FLOAT|NULLABLE|
+|end_lng|FLOAT|NULLABLE|
+|member_casual|STRING|NULLABLE|
 
 ## Process
 
-BigQuery is used to combine the various datasets into one dataset and clean it.  
-Reason:  
-A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inability to manage large amounts of data. Because the Cyclistic dataset has more than 5.6 million rows, it is essential to use a platform like BigQuery that supports huge volumes of data.
+We use BigQuery to combine the mothly data into single table from Jan to Dec 2022.
+
+We could not process in Excel or Spreadsheet because the maximum that these systems can handle only up to 1,048,576 rows.
 
 ### Combining the Data
 
@@ -83,48 +97,45 @@ SQL Query: [Data Combining](https://github.com/spillif/Case-Study-1-Google-Data-
 ### Data Exploration
 
 SQL Query: [Data Exploration](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/02.%20Exploring%20Data.sql)  
-Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.  
+Get through the dataset to recognize the unusual and unidentify values.
 
-Observations:  
+1. The **ride_id** column show no duplicate, no null value, and have a concrete character length.
+-> **ride_id** is the primary id.
 
-1. The table below shows all column names and their data types. The __ride_id__ column is our primary key.
+   ![image](https://user-images.githubusercontent.com/126408630/251006408-2ff3e09b-9336-47b7-a85d-26be61269e83.PNG)
 
-   ![image]()  
+   ![image](https://user-images.githubusercontent.com/126408630/251006568-2a885cf6-9fae-4d25-882e-67b94def732d.PNG)
 
-2. The following table shows number of __null values__ in each column.  
+   ![image](https://user-images.githubusercontent.com/126408630/251007253-6f919973-784a-42c5-bb6e-7ffd06f6ef35.PNG)
 
-   ![image]()
+   ![image](https://user-images.githubusercontent.com/126408630/251007609-50ff9aaa-547d-4345-958e-7b531d8e0e01.PNG)  
 
-   Note that some columns have the same number of missing values. This may be due to missing information in the same row i.e. station's name and id for the same station and latitude and longitude for the same ending station.  
-3. As ride_id has no null values, let's use it to check for duplicates.  
+2. Checking duplication values for each fields.
 
-   ![image]()
+   ![image](https://user-images.githubusercontent.com/126408630/251007429-2b8afec5-0e10-41d5-b2eb-7db04b55e11d.PNG)
 
-   There are no __duplicate__ rows in the data.  
+3. There are 3 unique types of bikes **rideable_type** in our data.
 
-4. All __ride_id__ values have the length of 16 so no need to clean it.
-5. There are 3 unique types of bikes(__rideable_type__) in our data.
+   ![image](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/assets/126408630/9a9ff571-9440-46cc-a58d-78b29d77e43b)
 
-   ![image]()
+4. **started_at** and **ended_at** follow TIMESTAMP - YYYY-MM-DD hh:mm:ss UTC.
 
-6. The __started_at__ and __ended_at__ shows start and end time of the trip in YYYY-MM-DD hh:mm:ss UTC format. A new column ride_length can be created to find the total trip duration. There are 5360 trips which have a duration longer than a day and 122283 trips having less than a minute duration or have an end time earlier than the start time so need to remove them. Other columns day_of_week and month can also be helpful in the analysis of trips at different times in a year.
-7. Total of 833064 rows have both __start_station_name__ and __start_station_id__ missing which needs to be removed.  
-8. Total of 892742 rows have both __end_station_name__ and __end_station_id__ missing which needs to be removed.
-9. Total of 5858 rows have both __end_lat__ and __end_lng__ missing which needs to be removed.
-10. __member_casual__ column has 2 unique values as a member or casual rider.
+5. These fields need to be cleaned up.
 
-    ![image]()
+   ![image](https://user-images.githubusercontent.com/126408630/251008679-81204158-794f-4399-bd8c-023475436fd6.PNG)
 
-11. Columns that need to be removed are start_station_id and end_station_id as they do not add value to the analysis of our current problem. The longitude and latitude location columns may not be used in analysis but can be used to visualize a map.
+   - **start_sation_name**, **end_station_name**, **start_station_id**, and **end_station_id** contribute no value to the analysis.
+   - **lat** and **lng** use to visualize mapping.
+
+6. **member_casual** column has 2 unique values as a member or casual rider.
+
+    ![image](https://user-images.githubusercontent.com/126408630/251009309-c01449ba-dc95-4228-b145-d4a961d55a72.PNG)
 
 ### Data Cleaning
 
 SQL Query: [Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/03.%20Cleaning%20Data.sql)  
 
-1. All the rows having missing values are deleted.  
-2. 3 more columns ride_length for the duration of the trip, day_of_week and month are added.  
-3. Trips with a duration of less than a minute and longer than a day are excluded.
-4. Total of 1,375,912 rows are removed in this step.
+
   
 ## Analyze and Share
 
