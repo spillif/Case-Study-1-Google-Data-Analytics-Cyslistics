@@ -135,8 +135,13 @@ Get through the dataset to recognize the unusual and unidentify values.
 
 SQL Query: [Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/03.%20Cleaning%20Data.sql)  
 
+1. Find if can replace the null values.
+2. Removed all the missing subjects.
+3. Created new table with:
+   - **ride_length**: duration of the trip
+   - **day_of_week**: day starting the trip
+   - **month**: month extract from trip starting day
 
-  
 ## Analyze and Share
 
 SQL Query: [Data Analysis]()  
