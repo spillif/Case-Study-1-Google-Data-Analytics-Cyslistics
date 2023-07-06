@@ -6,12 +6,12 @@ Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.cour
 
 In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. To answer the key business questions, I will follow the steps of the data analysis process:
 
-- [Ask](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Ask.md#i-ask)
-- [Prepare](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Prepare.md#ii-prepare)
-- [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Process.md#iii-process)
-- [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Analyze.md#iv-analyze)
+- [Ask](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#ask)
+- [Prepare](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#prepare)
+- [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#process)
+- [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#process)
 - [Share]()
-- [Act]()
+- [Act](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#act)
 
 ### Quick links
 
@@ -41,7 +41,7 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 
 I am assuming to be a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, my team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, my team will design a new marketing strategy to convert casual riders into yearly members. But first, Cyclistic executives must approve our recommendations, so they must be backed up with compelling data insights and professional data visualizations.
 
-## Ask
+## [Ask](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Ask.md#i-ask)
 
 ### Business Task
 
@@ -57,7 +57,7 @@ Three questions will guide the future marketing program:
 
 Moreno has assigned me the first question to answer: How do annual members and casual riders use Cyclistic bikes differently?
 
-## Prepare
+## [Prepare](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Prepare.md#ii-prepare)
 
 ### Data Source
 
@@ -83,7 +83,7 @@ This is public data that can be used to explore how different customer types are
 |end_lng|FLOAT|NULLABLE|
 |member_casual|STRING|NULLABLE|
 
-## Process
+## [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Process.md#iii-process)
 
 We use BigQuery to combine the mothly data into single table from Jan to Dec 2022.
 
@@ -142,7 +142,7 @@ SQL Query: [Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-A
    - **day_of_week**: day starting the trip
    - **month**: month extract from trip starting day
 
-## Analyze and Share
+## [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Analyze.md#iv-analyze) and Share
 
 SQL Query: [Data Analysis](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/04.%20Analyzing%20Data.sql)  
 Data Visualization: [Tableau]()  
