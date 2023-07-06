@@ -88,5 +88,3 @@ end_station_name is not null and
 end_lat is not null and
 ride_length > 1 AND ride_length < 1440
 order by ride_length desc; -- total 4,291,805 rows
-
---
