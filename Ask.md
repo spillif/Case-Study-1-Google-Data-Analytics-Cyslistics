@@ -17,7 +17,7 @@
 5. Supporting visualizations and key findings
 6. Your top three recommendations based on your analysis
 
-### **Mockup Questions:**
+### **Mockup Questions**
 
 1. What is the problem you are trying to solve?
     - Different between annual vs casual users
@@ -34,7 +34,7 @@
         - The most active station
     - Providing the daily usage of casual and member type
 
-### **Key tasks:**
+### **Key tasks**
 
 1. Insight into the Cyclistics metrics
     - Member behaviours
