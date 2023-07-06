@@ -16,7 +16,7 @@
 
     - There are 12 files for 2022, 5 files for 2023 with naming YYYYMM-divvy-tripdata and 1 Station file naming divvy_station_YYYY_Q#Q#.
 
-**Trip Data**
+## **Trip Data**
 
 |Field Name|Type|Mode|
 |------|------|----|
