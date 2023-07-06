@@ -9,7 +9,7 @@ In this case study, I will perform many real-world tasks of a junior data analys
 - [Ask](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Ask.md#i-ask)
 - [Prepare](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Prepare.md#ii-prepare)
 - [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Process.md#iii-process)
-- [Analyze]()
+- [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Analyze.md#iv-analyze)
 - [Share]()
 - [Act]()
 
@@ -21,7 +21,7 @@ SQL Queries:
 [01. Data Combining](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/01.%20Combining%20Data.sql)  
 [02. Data Exploration](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/02.%20Exploring%20Data.sql)  
 [03. Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/03.%20Cleaning%20Data.sql)  
-[04. Data Analysis]()  
+[04. Data Analysis](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/04.%20Analyzing%20Data.sql)  
 
 Data Visualizations: [Tableau]()  
 
@@ -144,7 +144,7 @@ SQL Query: [Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-A
 
 ## Analyze and Share
 
-SQL Query: [Data Analysis]()  
+SQL Query: [Data Analysis](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/04.%20Analyzing%20Data.sql)  
 Data Visualization: [Tableau]()  
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
 The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
