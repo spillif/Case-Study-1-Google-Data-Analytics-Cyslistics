@@ -82,33 +82,82 @@ select end_station_name, member_casual, avg(end_lat) as end_lat,
 from `my-project-dana-390116.Cyclistics.clean-divvy-tripdata`
 group by end_station_name, member_casual;
 
--- mode day of week
+-- mode month
 
-select rnk, day_of_week, cnt
+select rnk, member_casual, month, cnt
 from
 (
-  select day_of_week, cnt,dense_rank() 
+  select member_casual, month, cnt,dense_rank() 
   over(order by cnt DESC) as rnk
     from
     (
-      select day_of_week, count(*) as cnt
+      select member_casual, month, count(*) as cnt
       from `my-project-dana-390116.Cyclistics.clean-divvy-tripdata`
-      group by day_of_week
+      group by month, member_casual
+    )
+)
+order by rnk;
+
+-- mode day of week
+
+select rnk, member_casual, day_of_week, cnt
+from
+(
+  select member_casual, day_of_week, cnt,dense_rank() 
+  over(order by cnt DESC) as rnk
+    from
+    (
+      select member_casual, day_of_week, count(*) as cnt
+      from `my-project-dana-390116.Cyclistics.clean-divvy-tripdata`
+      group by day_of_week, member_casual
     )
 )
 order by rnk;
 
 -- mode hour of day
 
-select rnk, day_of_week, hour_of_day, cnt
+select rnk, member_casual, day_of_week, hour_of_day, cnt
 from
 ( 
-  select day_of_week, hour_of_day, cnt, dense_rank()
+  select member_casual, day_of_week, hour_of_day, cnt, dense_rank()
   over(order by cnt desc) as rnk
     from
     (
-      select day_of_week, extract(HOUR from started_at) as hour_of_day, count (*) as cnt
+      select member_casual, day_of_week, extract(HOUR from started_at) as hour_of_day, count (*) as cnt
       from `my-project-dana-390116.Cyclistics.clean-divvy-tripdata`
-      group by day_of_week, hour_of_day
+      group by day_of_week, member_casual, hour_of_day
     )
-);
+)
+order by rnk;
+
+-- ranking start/ end_location
+
+select rnk, member_casual, start_station_name, start_lat, start_lng, cnt
+from
+( 
+  select member_casual, start_station_name, start_lat, start_lng, cnt, dense_rank()
+  over(order by cnt desc) as rnk
+    from
+    (
+      select member_casual, start_station_name, avg(start_lat) as start_lat, avg(start_lng) as start_lng, count (*) as cnt
+      from `my-project-dana-390116.Cyclistics.clean-divvy-tripdata`
+      group by start_station_name, member_casual
+    )
+)
+order by rnk;
+
+--
+
+select rnk, member_casual, end_station_name, end_lat, end_lng, cnt
+from
+( 
+  select member_casual, end_station_name, end_lat, end_lng, cnt, dense_rank()
+  over(order by cnt desc) as rnk
+    from
+    (
+      select member_casual, end_station_name, avg(end_lat) as end_lat, avg(end_lng) as end_lng, count (*) as cnt
+      from `my-project-dana-390116.Cyclistics.clean-divvy-tripdata`
+      group by end_station_name, member_casual
+    )
+)
+order by rnk;
