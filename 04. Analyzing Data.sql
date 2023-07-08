@@ -49,9 +49,9 @@ order by member_casual;
 
 -- avg ride length per user type per hour
 
-select member_casual, day_of_week, avg(extract(HOUR from started_at)) as avg_travel_duration_hour
+select member_casual, day_of_week, extract(HOUR from started_at) as hour_of_day, avg(ride_length) as avg_travel_duration_hour
 from `my-project-dana-390116.Cyclistics.clean-divvy-tripdata`
-group by member_casual, day_of_week
+group by member_casual, day_of_week, hour_of_day
 order by member_casual;
 
 -- avg ride start
