@@ -1,7 +1,7 @@
 # **IV. Analyze**
 
 1. Data is well orgarnized and formatted.
-2. Discover data in detail
+2. Discover data in detail.
 
     - During 2022, 60% of cyclistics users were member (2.5 millions trips).
     - Membership were only using Classic and Electrice bike.
@@ -20,3 +20,13 @@
         - Casual: they interested in travelling from famous places to other monuments (Parks, museums, etc.)
         - Typically, Casual riders are mostly travellers, touris; while member are domestic citizen (Chicagoans).
         - The Windy city attracts tourist by the long coast of Michigan Lake.
+
+3. Organize data: exporting data for the analysis.
+
+    - Total trips per Biker types.
+    - Total trips per Month/ Day/ Hour (3 separate files).
+    - Avg trip duration per Vehicles.
+    - Avg trip duration per Month/ Day/ Hour (3 files).
+    - Total trips per Start/ End location (2 files).
+    - Ranking Start/ End location (2 files).
+    - Mode of Month/ Day/ Hour (3 files).
