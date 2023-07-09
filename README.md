@@ -171,38 +171,39 @@ Next, the distributed of membership per month, day of week, and hours of day are
 
 ![image](https://user-images.githubusercontent.com/126408630/252132144-5a444c41-a7e1-4685-b58e-93e781420c5d.png)
 
-2. **Days of Week:** When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
+2. **Days of Week:**
+   - Total trips: Member riders tended to prefer using Cyclistics on weekdays. On the other hand, travellers and tourists began their trip on the weekends.
 
-__Hours of the Day:__ The members show 2 peaks throughout the day in terms of number of trips. One is early in the morning at around 6 am to 8 am and the other is in the evening at around 4 pm to 8 pm while the number of trips for casual riders increases consistently over the day till evening and then decreases afterwards.  
+   - Average duration: Casual bikers spent daily 25 minutes meanwhile members are only 13 minutes.
+
+![image](https://user-images.githubusercontent.com/126408630/252135693-a1531ad8-dc8b-4031-a720-e49506bf79cc.png)
+
+3. **Hours of the Day:**
+   - Members travels more often in early morning and evening (typical business hour). Early in the morning from 6 to 8 am when they go to work and evening from 4 to 7 pm when they head back home. The number of trips surges over the day and start to drops later of the day.
+
+   - The average trip duration for member throughout the day is consistency. For casual users, their favour travel time from 10 to 3 pm and 22 pm to 1 am.
   
-We can infer from the previous observations that member may be using bikes for commuting to and from work on the weekdays while casual riders are using bikes throughout the day, more frequently over the weekends for leisure purposes. Both are most active in summer and spring.  
+![image](https://user-images.githubusercontent.com/126408630/252136907-7eda09b1-b6b5-4b1d-bae7-d9eb5c4926e8.png)
+
+-> We can assume that both member and casual are prefer using Cyclistics in Spring and Summer. Members tend to using the bike from their space to work and vice versa. Casual spends their leisure time using different types of bikes to enjoy the weekends. Casual user cycle double the usage duration than members. Casual trasients also having a greater variation from their journeys, they travel more on spring and summer, and on the weekends from 10 am to 2 pm. Their duration tails off in the evening (5 to 8 pm).
+
+For further understand the difference between casual and member commuters, we may have to dig down into their start and end location.
+
+- Member riders began their trips between the stations that they are often visit: Universities, schools, parks, residential areas, public/ priveate instituations, their workplace, etc.
+- Casual riders is in the opposite side while they tend to pick up and drop off their vehicles from the station close to city monuments (museums, parks, etc.) Their favorite location was habour coasts.
   
-The ride duration of the trips is compared to find the differences in the behaviour of casual and member riders.  
-  
-![image]()  
-![image]()
-  
-Take note that casual riders tend to cycle longer than members do on average. The length of the average journey for members doesn't change throughout the year, week, or day. However, there are variations in how long casual riders cycle. In the spring and summer, on weekends, and from 10 am to 2 pm during the day, they travel greater distances. Between five and eight in the morning, they have brief trips.
-  
-These findings lead to the conclusion that casual commuters travel longer (approximately 2x more) but less frequently than members. They make long journeys on weekends and during the day outside of commuting hours and in spring and summer seasons, so they might be doing so for recreation purposes.  
-  
-To further understand the differences between casual and member riders, the locations of starting and ending stations can be analyzed. Stations with the most trips are considered using filters to draw out the following conclusions.  
-  
-![image]()  
+![image](https://user-images.githubusercontent.com/126408630/252148532-0e2f8e6c-fb9d-4c1b-96cb-7a299ebc8efe.png)  
   
 Casual riders have frequently started their trips from the stations in the vicinity of museums, parks, beaches, harbour points and aquariums while members have begun their journeys from stations close to universities, residential areas, restaurants, hospitals, grocery stores, theatre, schools, banks, factories, train stations, parks and plazas.  
-  
-![image]()
-  
-A similar trend can be observed in ending station locations. Casual riders end their journey near parks, museums and other recreational sites whereas members end their trips close to universities, and residential and commercial areas. So this proves that casual riders use bikes for leisure activities while members extensively rely on them for daily commutes.  
-  
+
 Summary:
   
 |Casual|Member|
 |------|------|
-|Prefer using bikes throughout the day, more frequently over the weekends in summer and spring for leisure activities.|Prefer riding bikes on weekdays during commute hours (8 am / 5 pm) in summer and spring.|
-|Travel 2 times longer but less frequently than members.|Travel more frequently but with shorter rides (approximately half of the casual riders' trip duration).|
-|Start and end their journeys near parks, museums, along the coast and other recreational sites.|Start and end their trips close to universities, residential and commercial areas.|  
+|Using the program during the daytime and on the weekend.|Mostly riding during the business hours time (8 am - 5pm)|
+|Both prefer travel in Spring and Summer.|They rarely cycling in the winter.|
+|Travel longer than members (double the time than members) and less frequently.|Consistenly using the vehicle to and from their workplace|
+|Recreational areas.|Start and end location around their familiar areas (home, workplace, etc.)|  
   
 ## Act
 
@@ -210,6 +211,6 @@ After identifying the differences between casual and member riders, marketing st
 
 **Recommendations:**  
 
-1. Marketing campaigns might be conducted in spring and summer at tourist/recreational locations popular among casual riders.
-2. Casual riders are most active on weekends and during the summer and spring, thus they may be offered seasonal or weekend-only memberships.
-3. Casual riders use their bikes for longer durations than members. Offering discounts for longer rides may incentivize casual riders and entice members to ride for longer periods of time.
+1. The marketing campaigns must focus on the casual inclinations and along side their favourable racreational areas. The campaigns should begin before/ during Spring and Summer (their most favourite seasons), and on the weekend daytime (10 am to 2pm).
+2. Since the casual riders mostly using program on seasonal and weekend basis, we may introduce the new membership type: seasonal pass, days pass (24/ 48/ 72 hours pass).
+3. We can offer the cashback/ loyalty program, the more they use Cyclistics, the less they have to pay. We can giving them a bundle when purchasing the pass with the same ID.
