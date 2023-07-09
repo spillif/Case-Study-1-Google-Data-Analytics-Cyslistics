@@ -6,11 +6,11 @@ Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.cour
 
 In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. To answer the key business questions, I will follow the steps of the data analysis process:
 
-- [Ask](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#ask)
-- [Prepare](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#prepare)
-- [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#process)
-- [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#analyze-and-share)
-- [Share](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#analyze-and-share)
+- [Ask](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/tree/main#ask)
+- [Prepare](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/tree/main#prepare)
+- [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/tree/main#process)
+- [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/tree/main#analyze-and-share)
+- [Share](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/tree/main#analyze-and-share)
 - [Act](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/tree/main#act)
 
 ### Quick links
