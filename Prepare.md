@@ -1,6 +1,6 @@
 # **II. Prepare**
 
-1. Data source from [divvy-tripdata].(<https://divvy-tripdata.s3.amazonaws.com/index.html>)
+1. Data source from [divvy-tripdata](<https://divvy-tripdata.s3.amazonaws.com/index.html>)
     - Raw data is downloaded to the local folder and uploaded to [share drive](<https://drive.google.com/drive/u/1/folders/12HO3jPFuwnwtFzn6vmG3d3gok1IlBVEb>)
 
 2. Data Organized per month and consolidate to the share folder
