@@ -194,6 +194,10 @@ For further understand the difference between casual and member commuters, we ma
   
 ![image](https://user-images.githubusercontent.com/126408630/252148532-0e2f8e6c-fb9d-4c1b-96cb-7a299ebc8efe.png)  
   
+Top 50 start and end locations.
+
+![image](https://user-images.githubusercontent.com/126408630/252150642-f9e245bf-b2f3-4622-8cdd-49094ed56b75.png)
+
 Casual riders have frequently started their trips from the stations in the vicinity of museums, parks, beaches, harbour points and aquariums while members have begun their journeys from stations close to universities, residential areas, restaurants, hospitals, grocery stores, theatre, schools, banks, factories, train stations, parks and plazas.  
 
 Summary:
