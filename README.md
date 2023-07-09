@@ -11,7 +11,7 @@ In this case study, I will perform many real-world tasks of a junior data analys
 - [Process](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#process)
 - [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#analyze-and-share)
 - [Share](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#analyze-and-share)
-- [Act](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/README.md#act)
+- [Act](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/tree/main#act)
 
 ### Quick links
 
