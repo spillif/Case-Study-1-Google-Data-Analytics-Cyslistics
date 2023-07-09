@@ -152,20 +152,26 @@ The data is stored in [share drive](<https://drive.google.com/drive/u/1/folders/
 How do annual members and casual riders use Cyclistic bikes differently?  
 ```
 
-First of all, member and casual riders are compared by the type of bikes they are using.  
+First, we compare the vehicle types among member and casual riders.  
 
-![image]()
+![image](https://user-images.githubusercontent.com/126408630/252130539-4180dd36-b242-402b-9e3f-192dc753ff2a.png)
   
-The members make up 59.7% of the total while the remaining 40.3% constitute casual riders. Each bike-type chart shows a percentage of the total. The most used bike is the classic bike followed by the electric bike. Docked bikes are used the least by only casual riders.
+Member users made up 60% of the total trips for the year of 2022. Among the vehicle types, classic and eletric bicycle are mostly used by Member. Member cyclists using classical bikes are almost double than casual. Casual bikers using all types of vehicle including Docked bike, which is not a favourable for the member.
   
-Next the number of trips distributed by the months, days of the week and hours of the day are examined.  
-  
-![image]()
-![image]()
-  
-__Months:__ When it comes to monthly trips, both casual and members exhibit comparable behaviour, with more trips in the spring and summer and fewer in the winter. The gap between casuals and members is closest in the month of July in summer.  
+![image](https://user-images.githubusercontent.com/126408630/252131142-15a10ddb-0170-46a6-ad49-b72e4e83e6ef.png)
 
-__Days of Week:__ When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
+The total of trips per each bicycle types in 2022.
+
+Next, the distributed of membership per month, day of week, and hours of day are being deeply scanned (using total trips and average travel duration in 2022).
+  
+1. **Months:**
+   - Total trips: both membership types are sharing their behaviour, while their usage focus more during the nice weather (Spring and Summer) and decreasing when the winter starts. The number of casual riders using Cylistics increased when the travel season start (April) and decreased right after it (July - August). The trends for member riders is stretched up to October (before the winter time). Both of riders are share their favourable time in July.
+
+   - Average duration: Casual riders (travellers and tourist) spent more time for Cyclistics than member riders (residents, citizens, students, etc.)
+
+![image](https://user-images.githubusercontent.com/126408630/252132144-5a444c41-a7e1-4685-b58e-93e781420c5d.png)
+
+2. **Days of Week:** When the days of the week are compared, it is discovered that casual riders make more journeys on the weekends while members show a decline over the weekend in contrast to the other days of the week.  
 
 __Hours of the Day:__ The members show 2 peaks throughout the day in terms of number of trips. One is early in the morning at around 6 am to 8 am and the other is in the evening at around 4 pm to 8 pm while the number of trips for casual riders increases consistently over the day till evening and then decreases afterwards.  
   
