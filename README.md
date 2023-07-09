@@ -146,8 +146,10 @@ SQL Query: [Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-A
 
 SQL Query: [Data Analysis](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/04.%20Analyzing%20Data.sql)  
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/fillips.bui/viz/CyclisticsCaseStudy_16887412022800/CyclisticsStats2022)  
-The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
-The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
+The data is stored in [share drive](<https://drive.google.com/drive/u/1/folders/12HO3jPFuwnwtFzn6vmG3d3gok1IlBVEb>) and visualize in Tableau.
+
+``` The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
+```
 
 First of all, member and casual riders are compared by the type of bikes they are using.  
 
