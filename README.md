@@ -142,7 +142,7 @@ SQL Query: [Data Cleaning](https://github.com/spillif/Case-Study-1-Google-Data-A
    - **day_of_week**: day starting the trip
    - **month**: month extract from trip starting day
 
-## [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Analyze.md#iv-analyze) and Share
+## [Analyze](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/Analyze.md#iv-analyze) and [Share]()
 
 SQL Query: [Data Analysis](https://github.com/spillif/Case-Study-1-Google-Data-Analytics-Cyslistics/blob/main/04.%20Analyzing%20Data.sql)  
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/fillips.bui/viz/CyclisticsCaseStudy_16887412022800/CyclisticsStats2022)  
